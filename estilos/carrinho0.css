@@ -1,0 +1,231 @@
+body{
+    height: 100vh;
+    margin: 0;  
+}
+
+:root {
+    --color-principal-vermelho: #CC071E;
+    --color-preto: #000000  ;
+    --color-branco:#fff;
+    --cor-cinza:#555555;
+    --font-principal: "Cabin" , sans-serif;
+    --font-secundaria:'Inter';
+    --font-terciaria: 'Barlow' ;
+    --color-neutral-0: #554f4f;
+    --color-neutral-10: rgb(254, 237, 237);
+    --color-neutral-30: #111110;
+    --color-neutral-40: #424040;
+    }
+    .container {
+        display: flex;
+      }
+      
+    .lado_esquerdo{
+width: 50%;
+margin-left: 100px; 
+}
+.lado_direito{
+width: 50%;
+}
+
+.titulo_shopping{
+display: flex;
+gap: 7px;
+align-items: center;
+margin-bottom: 30px;
+}
+.titulo_carrinho{
+font-family: var(--font-secundaria);
+font-weight: 500;
+font-size: 36px;
+
+}
+
+.imagem_carrinhosvg{
+width: 30px;
+height: 30px;
+filter: invert(1); /* Inverte as cores da imagem (1 para 100% de inversão) */
+}
+.linha-reta{
+    border: 1px solid rgba(169, 169, 169, 0.5); /* Borda cinza quase transparente */
+width: 550px;
+}
+.container_produtos_carrinho{
+margin-top: 20px;
+display: flex;
+gap: 30px;
+margin-bottom: 20px;
+
+}
+.img_produto_car{
+width: 10rem;
+border-radius: 10px;    
+}
+.sub_titulo{
+font-size: 18px;
+font-family: var(--font-secundaria);
+font-weight: 300;
+width: 140px;
+height: 40px;
+}
+.container_titulo{
+display: block ;
+margin-left: 30px;
+}
+.container_btn{
+    display: flex;
+    gap: 168px;
+    height: 40px;
+}
+.btn_x{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 100px;
+}
+.svg_x{
+    width: 16px;
+    height: 12px;
+}
+.container_cor_descricao{
+    display: flex;
+gap: 10px;
+align-items: center;
+
+}
+.color_text{
+font-family: var(--font-secundaria);
+color: #6b7280;
+font-size: 16px;
+}
+.linha-reta2{
+    height: 20px;
+    border: 1px solid rgba(169, 169, 169, 0.5); /* Borda cinza quase transparente */
+    color: #6b7280;
+}
+.descricao_text{
+    font-family: var(--font-secundaria);
+    color: #6b7280;
+    font-size: 16px;
+
+}
+.container_quantidade{
+display: flex;
+margin-left: 110px;
+}
+#numero{
+    font-size: 16px;
+    background-color:#fff ;   
+    border: 1px solid rgba(169, 169, 169, 0.3); /* Borda cinza quase transparente */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+  margin-right: 10px;
+  font-family: var(--font-secundaria); 
+  color: var(--cor-cinza);
+}
+.preco_text{
+font-family: var(--font-secundaria);
+color: var(--color-principal-vermelho);
+margin-top: 14px;
+}
+/*lado direito*/
+.container__sumario{
+margin-right: 30px;
+    padding: 24px 16px;
+background: #f9fafb;
+margin-top: 60px;
+border-radius: 10px;
+
+}
+.Container_sumario_sun{
+margin-left: 90px;
+}
+.titulo_left{
+font-family: var(--font-secundaria);
+font-size: 22px;
+font-weight: 400;
+margin-bottom: 30px;
+
+}
+.subtotal{
+display: flex;
+gap: 320px;
+margin-bottom: 19px;
+        margin-top:19px;
+}
+.subtotal2{
+    display: flex;
+    gap: 280px;
+    margin-bottom: 19px;
+        margin-top:19px;
+    }
+    .subtotal3{
+        display: flex;
+        gap: 290px;
+        margin-bottom: 19px;
+        margin-top:19px;
+    }
+        .subtotal4{
+            display: flex;
+            gap: 250px;
+            margin-bottom: 19px;
+            margin-top:19px;    
+        }
+.p_sub{
+font-family: var(--font-secundaria);
+color: #6b7280;
+font-size: 16px;
+}
+.linha-reta3{
+    border: 1px solid rgba(169, 169, 169, 0.5); /* Borda cinza quase transparente */  
+    width: 470px;
+}
+.valor_sub{
+    font-family: var(--font-secundaria);
+    font-size: 16px;
+}
+.p_valor_envio{
+    font-family: var(--font-secundaria);
+   color: #6b7280;
+   font-size: 16px;
+}
+.valor_env{
+    font-family: var(--font-secundaria);
+    font-size: 16px;
+}
+.p_taxa_imp{
+    font-family: var(--font-secundaria);
+   color: #6b7280;
+   font-size: 16px;
+}
+.valor_imp{
+    font-family: var(--font-secundaria);
+  
+    font-size: 16px;   
+
+}
+.p_valor_total{
+    font-family: var(--font-secundaria);
+    color: #6b7280;
+    font-size: 18px;   
+
+}
+.valor_total{
+    font-family: var(--font-secundaria);
+    color: var(--color-principal-vermelho);
+    font-size: 18px;   
+}
+.button_comprar{
+    width: 480px;
+    color: var(--color-branco);
+    font-family: var(--font-secundaria);
+    font-size: 18px;
+    background-color: var(--color-principal-vermelho);
+    margin: 34px 0px 0px;
+    padding:18px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+}

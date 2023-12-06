@@ -1,0 +1,49 @@
+:root {
+    --color-principal-vermelho: #CC071E;
+    --color-preto: #000000  ;
+    --color-branco:#fff;
+    --cor-cinza:#555555;
+    --font-principal: "Cabin" , sans-serif;
+    --font-secundaria:'Inter';
+    --font-terciaria: 'Barlow' ;
+    --color-neutral-0: #554f4f;
+    --color-neutral-10: rgb(254, 237, 237);
+    --color-neutral-30: #111110;
+    --color-neutral-40: #424040;
+    }
+    .lado_esquerdo2{
+        margin-left: 400px;
+        
+        }
+    .container_produtos_carrinho2 {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+        padding: 40px;
+        box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 10px;
+        width: 600px;
+    }
+    .Adicionar_car{
+font-family:  var(--font-secundaria);
+font-size: 18px;
+font-weight: 400;
+color: var(--color-neutral-0);
+margin-top: 60px;
+}
+.Adicionar_car:hover{
+    color: rgba(207, 30, 51, 0.66);
+}
+.container_add_car{
+display: flex;
+gap: 10px;
+justify-content: flex-end;
+    align-items: flex-end;
+}
+.icone_car{
+width: 20px;
+height: 20px;
+filter: invert(1); /* Inverte as cores da imagem (1 para 100% de inversão) */
+
+}

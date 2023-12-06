@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+--color-principal-vermelho: #CC071E;
+--color-preto: #000000  ;
+--color-branco:#fff;
+--cor-cinza:#555555;
+--font-principal: "Cabin" , sans-serif;
+--font-secundaria:'Inter';
+--font-terciaria: 'Barlow' ;
+--color-neutral-0: #554f4f;
+--color-neutral-10: rgb(254, 237, 237);
+--color-neutral-30: #111110;
+--color-neutral-40: #424040;
+}
+.Container_lado_direito{
+  width: 50%;
+  
+  }
+  .image__product__compra{
+      width: 80%;
+      border-radius: 10px;
+  
+  }
+  .image__product__baixo{
+  width: 100%;
+  }
+  .image__secundaria_product{
+      margin-top: 30px;
+      margin-right: 20px;
+      width: 38%;
+      
+  
+  }
+  .container__imagem__produtos{
+  margin-left: 10%
+  }
+  .tamanho_produtos{
+  display: flex;
+  gap: 10px;
+  }
+  
+  .produtos__tamanho{
+      display: flex;
+      gap: 14px;
+      font-family: var(--font-secundaria);
+      font-size: 16px;
+      
+  }
+  .tamanho_produtos{
+  background-color: #fff;
+  border: 1px solid var(--color-neutral-0);
+  padding: 12px;
+  width: 20px;
+  border-radius: 12px;
+  }
+  .titulo_principal_produto{
+  display: flex ; 
+  gap: 20px;
+  }
+.Container_lado_esquerdo{
+width: 50%;
+}
+.titulo_principal_produto{
+display: flex;
+margin-bottom: 0.7rem;
+font-family:var(--font-secundaria) ;
+gap: 270px;
+}
+.titulo{
+font-size:1.80rem ;
+font-weight: 500;
+color: var(--color-preto);
+}
+.preco{
+    font-size:1.80rem ;
+    font-weight: 400;
+    color: var(--color-principal-vermelho);
+}
+
+.avaliacao {
+    font-family: var(--font-secundaria);
+    font-size: 1.2rem;
+    display: flex;
+    margin-top: 1.2rem;
+    align-items: baseline; /* Alinha verticalmente o conteúdo no centro */
+    gap: 10px;
+    color: #6B7280;
+  }
+  
+  .estrelas::before {
+    content: "\2605"; /* Caractere Unicode da estrela preenchida */
+    color: #FFD700; /* Cor da estrela preenchida (amarelo ouro) */
+    font-size: 1.2em; /* Tamanho da estrela */
+   
+  }
+
+  
+  .estrelas[data-rating="1"]::before {
+    content: "\2605\2606\2606\2606\2606"; /* 1 estrela preenchida e 4 vazias */
+  }
+  
+  .estrelas[data-rating="2"]::before {
+    content: "\2605\2605\2606\2606\2606"; /* 2 estrelas preenchidas e 3 vazias */
+  }
+  
+  .estrelas[data-rating="3"]::before {
+    content: "\2605\2605\2605\2606\2606"; /* 3 estrelas preenchidas e 2 vazias */
+  }
+  
+  .estrelas[data-rating="4"]::before {
+    content: "\2605\2605\2605\2605\2606"; /* 4 estrelas preenchidas e 1 vazia */
+  }
+  
+  .estrelas[data-rating="5"]::before {
+    content: "\2605\2605\2605\2605\2605"; /* 5 estrelas preenchidas */
+  }
+  
+  .pontuacao {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+.text_color{
+font-size: 1.50rem;
+font-family: var(--font-secundaria);
+font-weight: 300;
+margin-top: 2rem;
+
+}
+.container_color{
+display: flex; 
+gap: 1rem;
+margin-top: 1.8rem;
+margin-bottom: 2.3rem;
+}
+.color_ball{
+width: 40px;
+height:40px;
+    background-color: var(--color-preto);
+    border-radius: 50%; 
+    border: 2px solid transparent; /* Borda inicial transparente */
+    outline: none; /* Remove a borda padrão do botão quando focado */
+    transition: border-color 0.3s ease; /* Adiciona uma transição para suavizar a mudança de cor da borda */
+
+}
+.color_ball:focus,
+.color_ball:active {
+opacity: 0.7;
+width: 43px;
+height: 43px;
+}
+.color_ball2{
+    width: 40px;
+    height:40px;
+        background-color: var(--color-branco);
+        border-radius: 50%; 
+        border: 2px solid; /* Borda inicial transparente */
+        outline: none; /* Remove a borda padrão do botão quando focado */
+        transition: border-color 0.3s ease; /* Adiciona uma transição para suavizar a mudança de cor da borda */
+    
+}
+.color_ball2:focus,
+.color_ball2:active {
+  opacity: 0.7;
+    width: 43px;
+  height: 43px;
+}
+.text_medidas{
+    font-size: 1.50rem;
+    font-family: var(--font-secundaria);
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.container_btn_tam{
+display: flex;
+gap: 2rem;
+}
+.btn_tamanhos{
+width: 96px;
+padding: 16px;
+background-color: #fff;
+font-family: var(--font-secundaria);
+border-radius: 7px;
+border: 0px solid grey;
+font-size: 1rem;
+font-weight: 500;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao passar o mouse nos botões não selecionados */
+background-color: transparent;
+  cursor: pointer;
+  transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  margin-top: 29px;
+  margin-bottom: 1rem;
+}
+.btn_tamanhos:active,
+.btn_tamanhos:focus {
+    background-color:var(--color-principal-vermelho); /* Cor do botão selecionado */
+    color: white; /* Cor do texto no botão selecionado */
+  }
+  
+  .btn_tamanhos:hover:not(.selected) {
+    opacity: 0.7; /* Opacidade reduzida ao passar o mouse nos botões não selecionados */
+  }
+  .button_comprar{
+    width: 608px;
+    color: var(--color-branco);
+    font-family: var(--font-secundaria);
+    font-size: 1.3rem;
+    background-color: var(--color-principal-vermelho);
+    margin: 34px 0px 0px;
+    padding:16px 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+.button_comprar:hover{
+    opacity: 0.7; /* Opacidade reduzida ao passar o mouse nos botões não selecionados */
+  }
+  .H1_descricao{
+font-family: var(--font-secundaria);
+margin-bottom: 20px;
+font-size: 1.7rem;  
+font-weight: 300;
+}
+  .p_descricao{
+font-family: var(--font-secundaria);
+font-size: 1.05rem; 
+width: 90%;
+color: #6B7280;
+}
+.linha-reta{
+margin-top: 50px ;
+width: 90%;
+border: 1px solid #ccc; 
+}
+.titulo_cuidados{
+    font-family: var(--font-secundaria);
+margin-top: 40px;
+    margin-bottom: 30px;
+font-size: 1.7rem;  
+font-weight: 300;
+}
+.text_cuidados  {
+font-family: var(--font-secundaria);
+color: #6B7280;
+margin-bottom: 10px;
+font-size: 17px;
+list-style: none;
+}
